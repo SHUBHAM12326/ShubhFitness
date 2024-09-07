@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    background: #081b29;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #4c87fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a, .nav-button {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.nav-button {
+    font-weight: bold;
+    background-color: #0ef;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.nav-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #051129;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a, .nav-button {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.workouts {
+    width: 100%;
+    margin-top: 80px;
+    height: 100vh;
+    background: url('./HomePage/Images/Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper-overlay.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.workouts-content {
+    max-width: 600px;
+}
+
+.workouts-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.workouts-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.workouts-content p {
+    font-size: 20px;
+}
+
+.club-sci {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.club-sci p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.club-sci a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: .5s ease;
+}
+
+.club-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+#services {
+    flex: 1;
+    margin: 25px;
+    background-color: transparent;
+    padding: 50px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    text-align: center;
+}
+
+/* Facilities Section */
+#facilities {
+    padding: 80px 0;
+    background: #081b29;
+    color: #fff;
+}
+
+.facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sub-titlee {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.sub-titlee span {
+    color: #0ef;
+}
+
+.facility-item {
+    flex: 1;
+    margin: 25px;
+    background-color: transparent;
+    padding: 50px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    text-align: center;
+}
+
+.facility-item h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.facility-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+.last-text {
+    text-align: center;
+    padding: 25px;
+    background: rgb(7, 85, 91);
+}
+
+.last-text p {
+    font-weight: 300;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .facilities-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
